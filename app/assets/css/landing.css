@@ -1,0 +1,58 @@
+.top-bar-old{
+    display: none;
+}
+.video-section-landing .video-heading{
+    text-align: center;
+}
+.video-section-landing .video-heading h1{
+    font-weight: normal;
+}
+.video-section-landing .video-heading span{
+    color: var(--brand-primary);
+    font-weight: 700;
+}
+
+
+
+
+/* for mobile */
+@media only screen and (max-width: 767px) {
+    .video-section-landing .video-heading h1 {
+        font-weight: normal;
+        font-size: 22px;
+    }
+}
+
+/* for Web */
+@media only screen and (min-width: 1200px) {
+    .video-section-landing .video-wrapper{
+        padding:0 100px;
+    }
+}
+
+
+/* ipad portrait */
+@media only screen and (max-width: 990px) and (min-width: 767px) {
+}
+
+
+/* ipad Landsacpe */
+@media only screen and (max-width: 1190px) and (min-width: 991px) {
+
+}
+/* Mini Web */
+@media only screen and (max-width:1280px) and (min-width: 1191px) {
+
+}
+/* Desktop */
+@media only screen and (max-width:1400px) and (min-width: 1281px) {
+
+}
+/*Mac book laptop*/
+@media only screen and (max-width:1600px) and (min-width: 1401px) {
+
+}
+/*high resolution desktop */
+@media only screen and (max-width:2000px) and (min-width: 1601px) {
+
+}

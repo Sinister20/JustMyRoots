@@ -1,0 +1,403 @@
+.main-header .logo {
+    width: 200px;
+}
+
+.main-header .logo img {
+    width: 100%;
+}
+
+.main-header .location-select {
+    background: none;
+    border: none;
+    display: flex;
+}
+
+.main-header .location-select img {
+    width: 18px;
+    height: 25px;
+    margin: 4px 0 0 0;
+}
+
+.main-header .location-select .content {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-left: 10px;
+}
+
+.location-select .select-location-dropdown {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--brand-primary);
+    text-decoration: underline;
+    text-transform: capitalize;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 4px;
+}
+
+.location-select .select-location-dropdown option {
+    color: #434343;
+    padding: 10px 4px;
+}
+
+.location-select .select-location-dropdown:focus {
+    outline: none;
+}
+
+.location-select button img {
+    width: 17px;
+}
+
+.main-header .food-prefer {
+    display: flex;
+    font-size: 14px;
+}
+
+.main-header.main-header .food-prefer div:first-child {
+    margin-right: 16px;
+}
+
+.main-header .right-menu img {
+    width: 18px;
+    height: 18px;
+    margin: 0 8px 0 0;
+}
+
+.main-header .right-menu.cart-menu span {
+    margin: 0 8px 0 0;
+}
+
+.main-header .right-menu.cart-menu img {
+    width: 22px;
+    height: 21px;
+}
+
+.main-navigation {
+    background: #242424;
+    padding: 20px 0;
+}
+
+.web-navigation-bar a {
+    position: relative;
+    width: 226px;
+    overflow: hidden;
+    height: 230px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.web-navigation-bar a .bg-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.web-navigation-bar a .bg-section img {
+    width: 100%;
+}
+
+.web-navigation-bar a .nav-links {
+    position: relative;
+    z-index: 2;
+    align-self: flex-end;
+    width: 100%;
+    padding: 90px 10px 0 10px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 34%, rgba(0, 212, 255, 0) 100%);
+    color: #fff;
+}
+
+.web-navigation-bar a .nav-links h5 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.web-navigation-bar a .nav-links p {
+    font-weight: normal;
+    margin: 6px 0 8px 0;
+    min-height: 36px;
+    font-size: 13px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.web-navigation-bar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--brand-primary);
+    transition: width .3s;
+    position: absolute;
+    bottom: 0px;
+    z-index: 9;
+}
+
+.web-navigation-bar a:hover::after {
+    width: 100%;
+    /* //transition: width .3s; */
+}
+
+/* Scroll Down menu css start */
+.slide-menu {
+    overflow: hidden;
+    z-index: 1200;
+    display: none;
+    color: #fff;
+    padding: 0;
+    width: 100%;
+    background: #242424;
+}
+
+.menuscroll .slide-menu {
+    position: fixed;
+    display: block;
+    top: 80px;
+}
+
+.slide-menu .web-navigation-bar a .nav-links {
+    position: relative;
+    z-index: 2;
+    align-self: flex-end;
+    width: 100%;
+    padding: 40px 10px 0 10px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 34%, rgba(0, 212, 255, 0) 100%);
+    color: #fff;
+}
+
+.slide-menu .web-navigation-bar a {
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.slide-menu .main-navigation {
+    background: #242424;
+    padding: 10px 0;
+}
+
+.slide-menu .web-navigation-bar a .nav-links p {
+    font-weight: normal;
+    margin: 4px 0 8px 0;
+    min-height: 16px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* for mobile */
+@media only screen and (max-width: 767px) {
+    .main-navigation {
+        overflow-x: scroll !important;
+        padding: 12px 0;
+    }
+
+    .main-navigation .web-navigation-bar {
+        width: 1280px;
+        padding: 0 20px;
+        overflow: auto;
+        justify-content: normal;
+    }
+
+    .web-navigation-bar a {
+        position: relative;
+        width: 124px;
+        height: 110px;
+
+    }
+
+    .main-navigation .web-navigation-bar .box-list {
+        margin-right: 10px;
+    }
+
+    .web-navigation-bar a .nav-links {
+        padding: 60px 10px 0 10px;
+    }
+
+    .main-navigation .web-navigation-bar .box-list:last-child {
+        margin-right: 0;
+    }
+
+    .slide-menu .web-navigation-bar a .nav-links,
+    .web-navigation-bar a .nav-links {
+        padding-bottom: 10px;
+    }
+
+    .menuscroll .slide-menu {
+        top: 58px;
+    }
+
+    .menuscroll .web-navigation-bar a .nav-links p,
+    .web-navigation-bar a .nav-links p {
+        display: none;
+    }
+
+    .web-navigation-bar a .nav-links h5 {
+        font-size: 12px;
+    }
+
+    .slide-menu .web-navigation-bar a {
+        height: 52px;
+    }
+
+    .main-header .logo {
+        width: 80px;
+    }
+
+    .main-header .right-menu.cart-menu .cart-text,
+    .main-header .logo .web-logo,
+    .location-select.web,
+    .main-header .toggle-button,
+    .main-header .food-prefer {
+        display: none;
+    }
+
+    .location-select .content {
+        font-size: 14px;
+        margin-left: 8px;
+    }
+
+    .location-select .select-location-dropdown {
+        padding-left: 0;
+        text-indent: 0;
+    }
+
+    .location-select img {
+        width: 16px;
+        height: 23px;
+        margin: 0;
+    }
+
+    .location-select.mobile {
+        width: 150px;
+    }
+
+}
+
+/* for Web */
+@media only screen and (min-width: 900px) {
+    .main-header .logo .mobile-logo {
+        display: none;
+    }
+
+    .location-select.mobile {
+        display: none;
+    }
+}
+
+/* ipad portrait */
+@media only screen and (max-width: 990px) and (min-width: 767px) {
+    .main-header .logo {
+        width: 80px;
+    }
+
+    .menuscroll .slide-menu {
+        position: fixed;
+        display: block;
+        top: 55px;
+    }
+    .main-header .food-prefer {
+        font-size: 12px;
+    }
+
+    .main-header .location-select img {
+        width: 17px;
+        height: 24px;
+        margin: 2px 0 0 0;
+    }
+    .header-wrapper .toggle-button {
+        margin-right: 0;
+        width: 144px;
+    }
+    .main-header .location-select button .content {
+        font-size: 12px;
+    }
+    .web-navigation-bar a {
+
+        width: 136px;
+        height: 180px;
+    }
+    .web-navigation-bar a .nav-links h5 {
+        font-size: 13px;
+        padding-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .web-navigation-bar a .nav-links p,
+    .slide-menu .web-navigation-bar a .nav-links p {
+        display: none;
+    }
+    .slide-menu .web-navigation-bar a {
+        height: 50px;
+    }
+    .main-header .logo .web-logo {
+        display: none;
+    }
+    .location-select.mobile {
+        display: none;
+    }
+}
+
+
+/* ipad Landsacpe */
+@media only screen and (max-width: 1190px) and (min-width: 991px) {
+    .web-navigation-bar a {
+        width: 184px;
+    }
+    .main-header .header-wrapper {
+        flex-wrap: inherit;
+    }
+    .header-wrapper .toggle-button {
+        margin-right: 10px;
+    }
+    .web-navigation-bar a .nav-links h5 {
+        font-size: 14px;
+    }
+    .menuscroll .slide-menu {
+        top: 74px;
+    }
+    .main-navigation {
+
+        padding: 10px 0;
+    }
+    .video-section-landing {
+        padding: 0 80px;
+    }
+}
+
+/* Mini Web */
+@media only screen and (max-width:1280px) and (min-width: 1191px) {}
+
+/* Desktop */
+@media only screen and (max-width:1400px) and (min-width: 1281px) {}
+
+/*Mac book laptop*/
+@media only screen and (max-width:1600px) and (min-width: 1401px) {
+    .main-header .location-select {
+        margin-left: 16px;
+    }
+}
+
+/*high resolution desktop */
+@media only screen and (max-width:2400px) and (min-width: 1601px) {
+    .main-header .location-select {
+        margin-left: 16px;
+    }
+
+}

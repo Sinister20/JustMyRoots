@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: 
+Disallow: /backup/
+Disallow: /admin/
+Disallow: /home/
+Disallow: /dev/
+Disallow: /product
+Disallow: /product-category
+Disallow: /api
+Disallow: /cart
+Disallow: /payment
+Disallow: /checkout
